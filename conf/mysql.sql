@@ -776,10 +776,6 @@ update ISSUE i set ISSUE_LIST_ID = (select ISSUE_LIST_ID from ISSUE_LIST_CONTENT
 
 DROP TABLE `ISSUE_LIST_CONTENT`;
 
-ALTER TABLE `ISSUE` ADD CONSTRAINT `fk_issue_issue_list` FOREIGN KEY (`ISSUE_LIST_ID`) REFERENCES `ISSUE_LIST` (`ISSUE_LIST_ID`);
-
-ALTER TABLE `ISSUE` MODIFY `ISSUE_LIST_ID` BIGINT NOT NULL;
-
 INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPTION`, `EXECTYPE`, `FILENAME`, `ID`, `LIQUIBASE`, `MD5SUM`, `ORDEREXECUTED`) VALUES ('gfouquet', 'Replace the ISSUE_LIST_CONTENT table by a FK in ISSUE', NOW(), 'Add Column, Custom SQL, Drop Table, Add Foreign Key Constraint, Add Not-Null Constraint', 'EXECUTED', '/var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-0.20.0.xml', 'tm-0.20.0.41', '2.0.5', '3:726804bd77783ba5146a81d59aaab4ac', 75);
 
 --  Changeset /var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-0.20.0.xml::tm-0.20.0.42::gfouquet::(Checksum: 3:0fe189d2c826b59230a2e5fea194ff17)
