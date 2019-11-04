@@ -4,7 +4,7 @@ Squash TM
 **Shipped version:** 1.20.0
 
 - [Yunohost project](https://yunohost.org)
-- [Emby website](https://www.squashtest.com/)
+- [Squash TM website](https://www.squashtest.com/)
 
 ![](https://sites.google.com/a/henix.fr/wiki-squash-tm/_/rsrc/1362760918250/config/customLogo.gif?revision=6)
 
