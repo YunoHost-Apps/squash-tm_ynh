@@ -3281,7 +3281,7 @@ INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPT
 
 --  Changeset /var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-1.8.0.xml::tm-1.8.0.issue-2899-1::bsiri::(Checksum: 3:c08bdd96581f7333744b200024cb7bd1)
 --  Clean up the database from dead entities that slipped through the deletion routines (mysql, postgresql)
-SET foreign_key_checks = 0;
+SET foreign_key_checks = 1;
 
 delete RESOURCE.* , SIMPLE_RESOURCE.*
       from RESOURCE inner join SIMPLE_RESOURCE on RESOURCE.RES_ID = SIMPLE_RESOURCE.RES_ID
