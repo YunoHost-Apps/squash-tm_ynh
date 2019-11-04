@@ -47,7 +47,7 @@ app=$YNH_APP_INSTANCE_NAME
 
 ### If the app uses nginx as web server (written in HTML/PHP in most cases), the final path should be "/var/www/$app".
 ### If the app provides an internal web server (or uses another application server such as uwsgi), the final path should be "/opt/yunohost/$app"
-final_path=/opt/$app
+final_path=/home/yunohost.app/$app
 test ! -e "$final_path" || ynh_die "This path already contains a folder"
 
 # Normalize the url path syntax
@@ -162,8 +162,8 @@ cp -a ../conf/startup.sh $final_path/bin/startup.sh
 
 # Set permissions to app files
 chmod +x  $final_path/bin/startup.sh
-#chown -R $app: $final_path
-chown -R admin:1007 $final_path
+chown -R $app: $final_path
+#chown -R admin:1007 $final_path
 
 
 #=================================================
