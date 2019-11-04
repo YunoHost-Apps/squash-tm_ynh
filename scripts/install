@@ -161,7 +161,7 @@ ynh_system_user_create $app
 ### that really need such authorization.
 
 # Set permissions to app files
-#chmod +x  $final_path/bin/startup.sh
+chmod +x  $final_path/bin/startup.sh
 #chown -R $app: $final_path
 chown -R admin:1007 $final_path
 
