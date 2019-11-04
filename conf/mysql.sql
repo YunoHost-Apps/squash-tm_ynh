@@ -2070,8 +2070,6 @@ INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPT
 --  Changeset /var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-1.4.0.xml::tm-1.4.0.feat-1513.010::mpagnon::(Checksum: 3:53271a83b14f6d877528c3f746ade8c8)
 --  Make attachment_list_ids new fks not nullable
 
-ALTER TABLE `RESOURCE` MODIFY `ATTACHMENT_LIST_ID` BIGINT NOT NULL;
-
 ALTER TABLE `PROJECT` MODIFY `ATTACHMENT_LIST_ID` BIGINT NOT NULL;
 
 ALTER TABLE `REQUIREMENT_LIBRARY` MODIFY `ATTACHMENT_LIST_ID` BIGINT NOT NULL;
