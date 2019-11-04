@@ -3,12 +3,12 @@ Description=squash-tm
 After=network.target
 
 [Service]
-WorkingDirectory=/home/yunohost.app/squash-tm/
+WorkingDirectory=/opt/squash-tm/
 User=squash-tm
 Group=users
 Type=simple
 UMask=000
-ExecStart=/home/yunohost.app/squash-tm/bin/startup.sh
+ExecStart=/opt/squash-tm/bin/startup.sh
 RestartSec=60
 Restart=always
 
