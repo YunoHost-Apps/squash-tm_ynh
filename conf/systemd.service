@@ -1,14 +1,14 @@
 [Unit]
-Description=streama
+Description=squash-tm
 After=network.target
 
 [Service]
-WorkingDirectory=/opt/streama/
+WorkingDirectory=/opt/squash-tm/
 User=admin
 Group=users
 Type=simple
 UMask=000
-ExecStart=/usr/bin/java -Djava.awt.headless=true -jar streama.jar
+ExecStart=/opt/squash-tm/bin/startup.sh
 RestartSec=30
 Restart=always
 
