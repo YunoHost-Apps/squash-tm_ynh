@@ -765,8 +765,6 @@ update ATTACHMENT a set ATTACHMENT_LIST_ID = (select AL_ID from ATTACHMENT_LIST_
 
 DROP TABLE `ATTACHMENT_LIST_CONTENT`;
 
-ALTER TABLE `ATTACHMENT` ADD CONSTRAINT `fk_attachment_att_list` FOREIGN KEY (`ATTACHMENT_LIST_ID`) REFERENCES `ATTACHMENT_LIST` (`ATTACHMENT_LIST_ID`);
-
 INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPTION`, `EXECTYPE`, `FILENAME`, `ID`, `LIQUIBASE`, `MD5SUM`, `ORDEREXECUTED`) VALUES ('gfouquet', 'Replace the ATTACHMENT_LIST_CONTENT table by a FK in ATTACHMENT', NOW(), 'Add Column, Custom SQL, Drop Table, Add Foreign Key Constraint, Add Not-Null Constraint', 'EXECUTED', '/var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-0.20.0.xml', 'tm-0.20.0.40', '2.0.5', '3:ab522a0d38bc1df143c84b75c668820b', 74);
 
 --  Changeset /var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-0.20.0.xml::tm-0.20.0.41::gfouquet::(Checksum: 3:726804bd77783ba5146a81d59aaab4ac)
