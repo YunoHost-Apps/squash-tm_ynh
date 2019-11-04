@@ -152,7 +152,7 @@ ynh_replace_string "yunouser"   "$db_name"    "$final_path/bin/startup.sh"
 ynh_replace_string "yunopass"   "$db_pwd"     "$final_path/bin/startup.sh"
 ynh_replace_string "yunobase"   "$db_name"    "$final_path/bin/startup.sh"
 
-#ynh_mysql_execute_file_as_root --file="$final_path/database-scripts/mysql-full-install-version-1.20.0.RELEASE.sql" --database="$db_name"
+ynh_mysql_execute_file_as_root --file="$final_path/data/squash-tm.mv.db" --database="$db_name"
 
 #=================================================
 # STORE THE CONFIG FILE CHECKSUM
