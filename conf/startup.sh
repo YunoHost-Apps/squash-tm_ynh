@@ -31,15 +31,15 @@
 JAR_NAME="squash-tm.war"  # Java main library
 HTTP_PORT=8080                             # Port for HTTP connector (default 8080; disable with -1)
 # Directory variables
-TMP_DIR=../tmp                             # Tmp and work directory
-BUNDLES_DIR=../bundles                     # Bundles directory
-CONF_DIR=../conf                           # Configurations directory
-LOG_DIR=../logs                            # Log directory
-TOMCAT_HOME=../tomcat-home                  # Tomcat home directory
-PLUGINS_DIR=../plugins                     # Plugins directory
+TMP_DIR=/opt/tmp                             # Tmp and work directory
+BUNDLES_DIR=/opt/bundles                     # Bundles directory
+CONF_DIR=/opt/conf                           # Configurations directory
+LOG_DIR=/opt/logs                            # Log directory
+TOMCAT_HOME=/opt/tomcat-home                  # Tomcat home directory
+PLUGINS_DIR=/opt/plugins                     # Plugins directory
 # DataBase parameters
 DB_TYPE=h2                                 # DAtabase type, one of h2, mysql, postgresql
-DB_URL=jdbc:h2:../data/squash-tm           # DataBase URL
+DB_URL=jdbc:h2:/opt/data/squash-tm           # DataBase URL
 DB_USERNAME=sa                             # DataBase username
 DB_PASSWORD=sa                             # DataBase password
 ## Do not configure a third digit here
