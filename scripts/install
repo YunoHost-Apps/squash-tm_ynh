@@ -148,11 +148,11 @@ ynh_system_user_create $app
 #=================================================
 cp -a ../conf/startup.sh $final_path/bin/startup.sh
 
-ynh_replace_string "yunouser"   "$db_name"    "$final_path/config/config_inc.php.sample"
-ynh_replace_string "yunopass"   "$db_pwd"     "$final_path/config/config_inc.php.sample"
+ynh_replace_string "yunouser"   "$db_name"    "$final_path/bin/startup.sh"
+ynh_replace_string "yunopass"   "$db_pwd"     "$final_path/bin/startup.sh"
 ynh_replace_string "yunobase"   "$db_name"    "$final_path/config/config_inc.php.sample"
 
-/squash-tm/database-scripts/mysql-full-install-version-1.20.0.RELEASE.sql
+ynh_mysql_execute_file_as_root --file="$final_path/squash-tm/database-scripts/mysql-full-install-version-1.20.0.RELEASE.sql" --database="$db_name"
 
 #=================================================
 # STORE THE CONFIG FILE CHECKSUM

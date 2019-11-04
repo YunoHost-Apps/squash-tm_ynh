@@ -38,10 +38,10 @@ LOG_DIR=/opt/squash-tm/logs                            # Log directory
 TOMCAT_HOME=/opt/squash-tm/tomcat-home                  # Tomcat home directory
 PLUGINS_DIR=/opt/squash-tm/plugins                     # Plugins directory
 # DataBase parameters
-DB_TYPE=h2                                 # DAtabase type, one of h2, mysql, postgresql
-DB_URL=jdbc:h2:/opt/squash-tm/data/squash-tm           # DataBase URL
-DB_USERNAME=sa                             # DataBase username
-DB_PASSWORD=sa                             # DataBase password
+DB_TYPE=mysql                                 # DAtabase type, one of h2, mysql, postgresql
+DB_URL=jdbc:mysql://localhost:3306/yunobase           # DataBase URL
+DB_USERNAME=yunouser                             # DataBase username
+DB_PASSWORD=yunopass                             # DataBase password
 ## Do not configure a third digit here
 REQUIRED_VERSION=1.8
 # Extra Java args
