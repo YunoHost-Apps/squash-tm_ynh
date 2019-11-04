@@ -161,8 +161,9 @@ ynh_system_user_create $app
 ### that really need such authorization.
 
 # Set permissions to app files
-chmod +x  $final_path/bin/startup.sh
-chown -R $app: $final_path
+#chmod +x  $final_path/bin/startup.sh
+#chown -R $app: $final_path
+chown -R admin:1007 $final_path
 
 
 #=================================================
@@ -176,4 +177,5 @@ if [ $is_public -eq 1 ]; then
 fi
 
 # Reload services
+systemctl start $app.service
 systemctl reload nginx
