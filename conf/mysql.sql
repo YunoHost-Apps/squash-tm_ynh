@@ -1800,7 +1800,6 @@ INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPT
 
 --  Changeset /var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-1.3.0.xml::tm-1.3.0-feat-1194.08::mpagnon::(Checksum: 3:27f8b473a60fb5a4eeee9f6faa4c82d8)
 --  After Data migration : issue's bugtracker must not be null
-ALTER TABLE `ISSUE` MODIFY `BUGTRACKER_ID` BIGINT NOT NULL;
 
 INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPTION`, `EXECTYPE`, `FILENAME`, `ID`, `LIQUIBASE`, `MD5SUM`, `ORDEREXECUTED`) VALUES ('mpagnon', 'After Data migration : issue''s bugtracker must not be null', NOW(), 'Add Not-Null Constraint', 'EXECUTED', '/var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-1.3.0.xml', 'tm-1.3.0-feat-1194.08', '2.0.5', '3:27f8b473a60fb5a4eeee9f6faa4c82d8', 148);
 
