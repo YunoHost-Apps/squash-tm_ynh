@@ -108,7 +108,7 @@ ynh_setup_source "$final_path"
 # INSTALL SQUASH TM
 #==============================================
 
-chmod +x  $final_path/startup.sh
+#chmod +x  $final_path/startup.sh
 
 #=================================================
 # NGINX CONFIGURATION
@@ -154,6 +154,7 @@ ynh_system_user_create $app
 ### that really need such authorization.
 
 # Set permissions to app files
+chmod +x  $final_path/bin/startup.sh
 chown -R $app: $final_path
 
 
