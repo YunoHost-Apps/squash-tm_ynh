@@ -37,11 +37,11 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for Squash TM / is accepted",
-                    "fr": "Choisissez un chemin pour Squash TM / est accepté"
+                    "en": "Choose a path for Squash TM /squash is accepted",
+                    "fr": "Choisissez un chemin pour Squash TM /squash est accepté"
                 },
-                "example": "/",
-                "default": "/"
+                "example": "/squash",
+                "default": "/squash"
             },
             
             {
