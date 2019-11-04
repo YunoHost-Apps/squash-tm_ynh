@@ -3308,7 +3308,7 @@ delete ATTACHMENT_LIST.*, ATTACHMENT.*, ATTACHMENT_CONTENT.*
       select ATTACHMENT_LIST_ID from TEST_SUITE
       );
 
-SET foreign_key_checks = 1;
+SET foreign_key_checks = 0;
 
 INSERT INTO `DATABASECHANGELOG` (`AUTHOR`, `COMMENTS`, `DATEEXECUTED`, `DESCRIPTION`, `EXECTYPE`, `FILENAME`, `ID`, `LIQUIBASE`, `MD5SUM`, `ORDEREXECUTED`) VALUES ('bsiri', 'Clean up the database from dead entities that slipped through the deletion routines (mysql, postgresql)', NOW(), 'Custom SQL', 'EXECUTED', '/var/lib/jenkins/jobs/build-squash-tm-distros-1.20/workspace/standalone/target/maven-shared-archive-resources/tm/tm.changelog-1.8.0.xml', 'tm-1.8.0.issue-2899-1', '2.0.5', '3:c08bdd96581f7333744b200024cb7bd1', 257);
 
